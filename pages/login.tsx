@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import Head from 'next/head';
+import Header from '../components/Header';
 
 const Login: NextPage = () => {
   return (
@@ -9,8 +10,12 @@ const Login: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex content-center justify-center h-screen items-center ">
-        <div className="w-96 p-4 rounded bg-white ">
+      <main className="flex flex-col items-center h-screen justify-center">
+        <div className="mb-8">
+          <Header compact />
+        </div>
+
+        <div className="w-96 p-4 rounded bg-white">
           <h1 className="text-3xl text-center font-semibold">Login</h1>
 
           <form>
