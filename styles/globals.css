@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://use.typekit.net/cwt2pit.css');
+
+body {
+  background-color: #f0f0f0;
+}
