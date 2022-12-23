@@ -23,21 +23,22 @@ const Login: NextPage = () => {
 
           <form>
             <input
-              className="bg-pingray-100 p-3 mt-8 w-full rounded font-light shadow"
+              className="bg-pingray-100 p-3 mt-8 w-full rounded font-light shadow
+              focus:ring-2 focus:outline-none focus:ring-bg-pinblue-500"
               placeholder="Username"
               type="email"
             />
             <input
-              className="bg-pingray-100 p-3 mt-3 w-full rounded font-light shado"
+              className="bg-pingray-100 p-3 mt-3 w-full rounded font-light shadow focus:ring-2 focus:outline-none focus:ring-bg-pinblue-500"
               placeholder="Password"
               type="password"
             />
 
-            <div>
+            <div className="flex justify-between mt-3">
               <button
                 type="button"
-                className="mt-3 text-pingray-500 bg-pingray-100
-                shadow hover:shadow-md focus:ring-4 focus:outline-none focus:ring-bg-sky-700/50 font-medium rounded-lg text-sm px-3 py-2.5 text-center inline-flex items-center mr-2"
+                className="text-pingray-500 bg-pingray-100
+                shadow hover:shadow-md focus:ring-2 focus:outline-none focus:ring-bg-pinblue-500 font-medium rounded text-sm px-3 py-2.5 text-center inline-flex items-center mr-2"
               >
                 <svg
                   className="mr-2 -ml-1 w-4 h-4 text-pinblue-500"
@@ -59,7 +60,7 @@ const Login: NextPage = () => {
 
               <button
                 type="button"
-                className="text-pingray-500 bg-pingray-100 shadow hover:shadow-md focus:ring-4 focus:outline-none focus:ring-bg-sky-700/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+                className="text-pingray-500 bg-pingray-100 shadow hover:shadow-md focus:ring-2 focus:outline-none focus:ring-bg-pinblue-500 font-medium rounded text-sm px-3 py-2.5 text-center inline-flex items-center"
               >
                 <svg
                   className="mr-2 -ml-1 w-4 h-4 text-pinblue-500"
@@ -81,7 +82,8 @@ const Login: NextPage = () => {
             </div>
             <button
               type="submit"
-              className="bg-pinblue-500 shadow hover:shadow-md w-full text-gray-100 p-2 rounded mt-8 font-['bree']"
+              className="bg-pinblue-500 shadow hover:shadow-md w-full text-gray-100 p-2 
+              focus:ring-2 focus:outline-none focus:ring-bg-pinblue-500 rounded mt-8 font-['bree']"
             >
               Submit
             </button>
