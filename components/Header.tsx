@@ -59,7 +59,7 @@ const Header = ({ compact }) => {
     return (
       <header className="flex mb-4 bg-white pl-4 pt-2 h-16">
         <Logo />
-        <div className="font-['krok'] text-2xl ml-3 mt-1">Pin B</div>
+        <div className="font-['krok'] text-2xl ml-3 mt-1 text-pinblue-500">Pin B</div>
       </header>
     );
   }

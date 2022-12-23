@@ -26,7 +26,7 @@ const EventCard: FC<TitleProps> = ({
     <div className="bg-white shadow rounded">
       <div className="flex justify-between">
         <div className="p-4">
-          <h1 className="text-xl font-bold text-gray-800">{title}</h1>
+          <h1 className="text-xl font-bold text-pingray-900">{title}</h1>
           <h2 className="text-md text-gray-500">{subtitle}</h2>
         </div>
         <img className="rounded-full w-12 h-12 m-4" src={profileImageUrl} />
