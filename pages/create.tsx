@@ -23,32 +23,32 @@ const Login: NextPage = () => {
 
           <form>
             <input
-              className="bg-pingray-100 shadow p-3 mt-8 w-full rounded font-light"
+              className="bg-pingray-100 shadow p-3 mt-8 w-full rounded font-light focus:ring-2 focus:outline-none focus:ring-bg-pinblue-500"
               placeholder="First Name"
             />
             <input
-              className="bg-pingray-100 shadow p-3 mt-3 w-full rounded font-light"
+              className="bg-pingray-100 shadow p-3 mt-3 w-full rounded font-light focus:ring-2 focus:outline-none focus:ring-bg-pinblue-500"
               placeholder="Last Name"
             />
             <input
-              className="bg-pingray-100 shadow p-3 mt-3 w-full rounded font-light"
+              className="bg-pingray-100 shadow p-3 mt-3 w-full rounded font-light focus:ring-2 focus:outline-none focus:ring-bg-pinblue-500"
               placeholder="Email"
               type="email"
             />
             <input
-              className="bg-pingray-100 shadow p-3 mt-3 w-full rounded font-light"
+              className="bg-pingray-100 shadow p-3 mt-3 w-full rounded font-light focus:ring-2 focus:outline-none focus:ring-bg-pinblue-500"
               placeholder="Password"
               type="password"
             />
             <input
-              className="bg-pingray-100 shadow p-3 mt-3 w-full rounded font-light"
+              className="bg-pingray-100 shadow p-3 mt-3 w-full rounded font-light focus:ring-2 focus:outline-none focus:ring-bg-pinblue-500"
               placeholder="Re-Enter Paswword"
               type="password"
             />
 
             <button
               type="submit"
-              className="bg-pinblue-500 shadow hover:shadow-md w-full text-gray-100 p-2 rounded mt-8 font-['bree']"
+              className="bg-pinblue-500 shadow hover:shadow-md w-full text-gray-100 p-2 rounded mt-8 font-['bree'] focus:ring-2 focus:outline-none focus:ring-bg-pinblue-500"
             >
               Create
             </button>
