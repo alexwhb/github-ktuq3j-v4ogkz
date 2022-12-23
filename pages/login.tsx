@@ -16,7 +16,7 @@ const Login: NextPage = () => {
           <Header compact />
         </div>
 
-        <div className="max-w-md p-4 rounded bg-white">
+        <div className="max-w-md p-8 rounded bg-white">
           <h1 className="text-3xl text-center font-semibold font-['bree']">
             Login
           </h1>
@@ -37,7 +37,7 @@ const Login: NextPage = () => {
               <button
                 type="button"
                 className="mt-3 text-pingray-500 bg-pingray-100
-                shadow-md hover:shadow-lg focus:ring-4 focus:outline-none focus:ring-bg-sky-700/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2"
+                shadow hover:shadow-md focus:ring-4 focus:outline-none focus:ring-bg-sky-700/50 font-medium rounded-lg text-sm px-3 py-2.5 text-center inline-flex items-center mr-2"
               >
                 <svg
                   className="mr-2 -ml-1 w-4 h-4 text-pinblue-500"

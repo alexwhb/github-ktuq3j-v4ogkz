@@ -16,7 +16,7 @@ const Login: NextPage = () => {
           <Header compact />
         </div>
 
-        <div className="max-w-md p-4 rounded bg-white">
+        <div className="max-w-md p-8 rounded bg-white">
           <h1 className="text-3xl text-center font-semibold font-['bree']">
             Sign Up
           </h1>
