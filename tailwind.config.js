@@ -5,7 +5,17 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        pinblue: {
+          500: '#638CA6',
+        },
+        pingray: {
+          100: '#F0F0F0',
+          500: '#808080',
+        },
+      },
+    },
   },
   plugins: [],
-}
+};
