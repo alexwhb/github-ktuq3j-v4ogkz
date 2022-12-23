@@ -11,8 +11,9 @@ const Home: NextPage = () => {
       <Head>
         <title>Pin B</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://use.typekit.net/cwt2pit.css" />
       </Head>
-      <Header />
+      <Header compact={false} />
 
       {/* This will be our card  */}
 
