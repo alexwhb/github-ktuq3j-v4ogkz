@@ -33,7 +33,7 @@ const EventCard: FC<TitleProps> = ({
       </div>
       <img src={eventImageUrl} />
 
-      <div className="flex justify-between p-2  font-normal text-pingray-600">
+      <div className="flex justify-between p-2 pt-3 pb-4 font-normal text-pingray-600">
         <div className="flex">
           <MapPin className="mt-3 mr-2 text-pinblue-500" />
           <div>
