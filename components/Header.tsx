@@ -57,9 +57,22 @@ const Header = ({ compact }) => {
     return <Logo />;
   } else {
     return (
-      <header className="flex mb-4 bg-white pl-4 pt-2 h-16">
-        <Logo />
-        <div className="font-['krok'] text-2xl ml-3 mt-1 text-pinblue-500">Pin B</div>
+      <header className="flex mb-4 bg-white pl-4 pt-5 h-20">
+        <div className="flex w-1/4">
+          <Logo />
+          <div className="font-['krok'] text-2xl ml-3 mt-1 text-pinblue-500">
+            Pin B
+          </div>
+        </div>
+        <div className="flex justify-center w-3/4">
+          <input
+            className="bg-pingray-100 pr-3 pl-3 rounded h-10 text-pingray-500 w-2/3"
+            placeholder="Search"
+          />
+          <span className="bg-pingray-100 rounded h-10 ml-6 pt-2 pr-4 pl-4 font-bold text-pingray-500">
+            50 Miles
+          </span>
+        </div>
       </header>
     );
   }

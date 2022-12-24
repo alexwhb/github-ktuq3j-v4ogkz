@@ -23,19 +23,19 @@ const EventCard: FC<TitleProps> = ({
   eventDate,
 }) => {
   return (
-    <div className="bg-white shadow rounded">
+    <div className="bg-white shadow rounded font-['Lato']">
       <div className="flex justify-between">
         <div className="p-4">
-          <h1 className="text-xl font-bold text-pingray-900">{title}</h1>
-          <h2 className="text-md text-gray-500">{subtitle}</h2>
+          <h1 className="text-3xl font-bold text-pingray-900">{title}</h1>
+          <h2 className="text-xl text-pingray-400">{subtitle}</h2>
         </div>
         <img className="rounded-full w-12 h-12 m-4" src={profileImageUrl} />
       </div>
       <img src={eventImageUrl} />
 
-      <div className="flex justify-between p-2  font-normal">
-        <div className="flex text-gray-600">
-          <MapPin className="mt-3 mr-2 text-sky-700" />
+      <div className="flex justify-between p-2  font-normal text-pingray-600">
+        <div className="flex">
+          <MapPin className="mt-3 mr-2 text-pinblue-500" />
           <div>
             {eventAddressLine1},
             <br />
@@ -43,16 +43,16 @@ const EventCard: FC<TitleProps> = ({
           </div>
         </div>
         <div>
-          <div className="flex text-gray-600 ">
-            <Clock className="mr-2 text-sky-700" /> {eventTime}
+          <div className="flex">
+            <Clock className="mr-2 text-pinblue-500" /> {eventTime}
           </div>
-          <div className="flex mt-2 text-gray-600">
-            <Calendar className="mr-2 text-sky-700" /> {eventDate}
+          <div className="flex mt-2">
+            <Calendar className="mr-2 text-pinblue-500" /> {eventDate}
           </div>
         </div>
         <div className="flex mt-4 mr-2">
-          <Share2 className="mr-4 text-sky-700" />{' '}
-          <MessageCircle className="text-sky-700" />
+          <Share2 className="mr-4 text-pinblue-500" />{' '}
+          <MessageCircle className="text-pinblue-500" />
         </div>
       </div>
     </div>

@@ -7,11 +7,15 @@ import Header from '../components/Header';
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-gray-200 h-screen">
+    <div className="h-screen">
       <Head>
         <title>Pin B</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://use.typekit.net/cwt2pit.css" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Header compact={false} />
 
