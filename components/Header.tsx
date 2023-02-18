@@ -73,7 +73,7 @@ const Header = ({ compact }) => {
             Pin B
           </div>
         </div>
-        <div className="flex justify-center w-3/4">
+        <div className="flex justify-center w-3/4 justify-center lg:justify-start">
           <input
             className="bg-pingray-100 pr-3 pl-3 rounded h-10 text-pingray-500 w-2/3"
             placeholder="Search"
