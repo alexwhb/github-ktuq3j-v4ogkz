@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Logo = () => {
   return (
@@ -52,7 +52,16 @@ const Logo = () => {
   );
 };
 
+
+const DISTANCE_OPTIONS = [5, 10, 15, 30, 50, 100];
+
 const Header = ({ compact }) => {
+  const [selectedDistance, setSelectedDistance] = useState(50);
+
+  const handleDistanceChange = (event) => {
+    setSelectedDistance(parseInt(event.target.value, 10));
+  };
+
   if (compact) {
     return <Logo />;
   } else {
@@ -69,12 +78,21 @@ const Header = ({ compact }) => {
             className="bg-pingray-100 pr-3 pl-3 rounded h-10 text-pingray-500 w-2/3"
             placeholder="Search"
           />
-          <span className="bg-pingray-100 rounded h-10 ml-6 pt-2 pr-4 pl-4 font-bold text-pingray-500">
-            50 Miles
-          </span>
+          <select
+            className="bg-pingray-100 rounded h-10 ml-6 mr-2 pr-2 pl-4 font-bold text-pingray-500"
+            value={selectedDistance}
+            onChange={handleDistanceChange}
+          >
+            {DISTANCE_OPTIONS.map((distance) => (
+              <option key={distance} value={distance}>
+                {distance} Miles
+              </option>
+            ))}
+          </select>
         </div>
       </header>
     );
   }
 };
+
 export default Header;
